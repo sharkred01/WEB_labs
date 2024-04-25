@@ -1,0 +1,22 @@
+﻿{% extends "app/layout.html" %}
+
+{% block content %}
+    {% load static %}
+<figure>
+    <a href="https://store.steampowered.com/app/594650/Hunt_Showdown/" target="_blank">
+        <img src="{% static 'app/content/logo1.jpg' %}" alt="Logo 1" />
+    </a>
+    <a href="https://store.steampowered.com/app/1086940/Baldurs_Gate_3/" target="_blank">
+        <img src="{% static 'app/content/logo2.jpg' %}" alt="Logo 2" />
+    </a>
+    <a href="https://store.steampowered.com/app/730/CounterStrike_2/" target="_blank">
+        <img src="{% static 'app/content/logo3.jpg' %}" alt="Logo 3" style="width: 227px; height: 87px;" />
+    </a>
+</figure>
+{% endblock %}
+
+{% block scripts %}
+<script src="{% static 'app/scripts/jquery-1.10.2.js' %}"></script>
+<script src="{% static 'app/scripts/bootstrap.js' %}"></script>
+<script src="{% static 'app/scripts/respond.js' %}"></script>
+{% endblock %}
